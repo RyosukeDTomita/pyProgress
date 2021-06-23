@@ -1,8 +1,8 @@
-import progress
-Time = progress.timer()
+import pyprogress
+from timer import timer
+startcal = timer()
 
 for i in range(0,20,1):
     print("Hello World")
-    progress.bar(i,19)
+    pyprogress.bar(i,19)
 
-Time.end()
