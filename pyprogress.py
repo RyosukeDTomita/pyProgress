@@ -17,8 +17,8 @@ import shutil
 class bar:
     def __init__(self,nowLoopCnt,maxLoopCnt):
         self.terminal_size = shutil.get_terminal_size()
-        self.terminal_columns = self.terminal_size.columns #縦
-        self.terminal_lines = self.terminal_size.lines #横
+        self.terminal_columns = self.terminal_size.columns #横
+        self.terminal_lines = self.terminal_size.lines #縦
         self.maxBarLength = self.terminal_columns - 10
         bar = "#"
         dot = '.'
